@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='logo.png') }}">
+    <title>AI Chatbot - About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        nav {
+            margin-top: 20px;
+            background-color: #b3acac;
+            display: flex;
+            justify-content: space-around;
+            width: 80vw;
+            padding: 10px 0;
+            border-radius: 8px;
+        }
+
+        button {
+            height: 5vh;
+            width: 20vw;
+            border-radius: 10px;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+            background-color: #fff;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+            transition: 0.3s;
+        }
+
+        main {
+            background-color: rgb(210, 201, 201);
+            min-height: 80vh;
+            width: 80vw;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .about-container {
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        h2 {
+            margin-top: 25px;
+            color: #444;
+        }
+
+        p {
+            margin: 5px 0;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="/"><button>Home</button></a>
+        <a href="/aboutus"><button>About Us</button></a>
+    </nav>
+
+    <main>
+        <div class="about-container">
+            <h1>About This Chatbot</h1>
+            <p>Welcome to my very first AI Chatbot Project!</p>
+            <p>Built using <strong>Google Gemini AI</strong>, this chatbot can answer questions, chat with you, and help you learn new things.</p>
+
+            <h2>Project Highlights 🚀</h2>
+            <p>✅ My first AI project built with Python, HTML, CSS, SQLAlchemy, and Flask.</p>
+            <p>🤖 Uses Gemini Free API Key, which has limited usage.</p>
+            <p>💬 Designed for simple conversation and fun learning.</p>
+            <p>🧪 This is a testing and experimental project, not for professional use.</p>
+
+            <h2>Important Notes ⚠️</h2>
+            <p>⚡ Responses might be short or slow due to free API limits.</p>
+            <p>❌ Chatbot may not always give perfect answers.</p>
+            <p>📚 I am learning AI and improving this project step-by-step.</p>
+        </div>
+    </main>
+</body>
+
+</html>

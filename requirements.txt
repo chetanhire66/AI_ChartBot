@@ -1,2 +1,6 @@
+flask==3.0.3
+flask_sqlalchemy
 gunicorn==23.0.0
-packaging==25.0
+google-generativeai
+python-dotenv
+requests

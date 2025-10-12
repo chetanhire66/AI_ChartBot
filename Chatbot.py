@@ -10,7 +10,7 @@ gemini_model = genai.GenerativeModel(
 
 gemini_chat = gemini_model.start_chat(history=[])
 
-def gemini(text_input):
+def geminiF(text_input):
     try:
         response = gemini_chat.send_message(text_input)
         response_text = response.text.strip()

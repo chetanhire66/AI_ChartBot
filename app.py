@@ -24,7 +24,7 @@ def home():
 @app.route('/ask', methods=['POST'])
 def ask():
     question = request.json.get('question')
-    ans = gimini(question)
+    ans = geminiF(question)
     new_data = SQL(question=question, ans=ans)
     db.session.add(new_data)
     db.session.commit()

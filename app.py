@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
-from Chatbot import gimini
+from Chatbot import geminiF
 import os
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///people.db'
